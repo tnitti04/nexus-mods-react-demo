@@ -9,6 +9,10 @@ const Home: NextPage = () => {
   const [newTodo, setNewTodo] = useState('');
 
   function addTodo(value: string) {
+    if (!value.length) {
+      alert('Add a valid todo')
+      return;
+    }
     setTodos((current) => [{ id: todos.length, value, completed: false }, ...current]);
     setNewTodo('');
   }
