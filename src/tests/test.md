@@ -1,6 +1,6 @@
 # TodoList Component
 
-The Todo App contains two files TodoList.tsx and index.tsx. The TodoList component is a presentational component that
+The Todo App contains two files TodoList.tsx and Home.tsx. The TodoList component is a presentational component that
 receives the todos as props, while the Home component is a container component that is responsible for managing the
 state of the app and rendering the TodoList component.
 
@@ -22,3 +22,5 @@ state of the app and rendering the TodoList component.
 * Should remove all completed todos when the Clear button is clicked.
 
 ## Testing approach for Todo App
+
+[Testing Link](@/tests/unit/todo-list.test.tsx)

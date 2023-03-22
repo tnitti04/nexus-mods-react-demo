@@ -14,12 +14,14 @@ const Home: NextPage = () => {
       return;
     }
     setTodos((current) => [{ id: todos.length, value, completed: false }, ...current]);
+    // resets the input //
     setNewTodo('');
   }
 
   function markAsCompleted(id: number) {
     setTodos((current) => current.map((todo) => ({
       ...todo,
+      // uses the id passed back to mark either completed/uncompleted //
       completed: todo.id === id ? !todo.completed : todo.completed,
     })));
   }
